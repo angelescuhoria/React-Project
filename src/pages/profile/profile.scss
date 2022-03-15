@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins&display=swap');
+
+$level_color: #e74c3c;
+$h3Color: #f3f4f8;
+$h3Span: #546de5;
+$running: rgba(106, 176, 76, 0.8);
+$swimming: rgba(52, 152, 219, 0.8);
+$activities: #ced6e0;
+$excerise: rgba(231, 76, 60, 0.8);
+$cycling: rgba(15, 185, 177, 0.8);
+$golf: rgba(165, 94, 234, 0.8);
+$meditating: rgba(74, 105, 189, 0.8);
+
+.profileRootDiv {
+  overflow: hidden;
+
+  .general_information {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 10vh;
+
+    .profileH3 {
+      color: $h3Color;
+      font-size: 4rem;
+      margin-right: -30vw;
+
+      span {
+        color: #546de5;
+      }
+    }
+
+    .level {
+      height: 220px;
+      width: 220px;
+
+      .outer {
+        height: 220px;
+        width: 220px;
+        border-radius: 50%;
+
+        svg {
+          position: absolute;
+
+          circle {
+            fill: none;
+            stroke: url(#GradientColor);
+            stroke-width: 20px;
+            stroke-dasharray: 472;
+            stroke-dashoffset: 332;
+            animation: load 2s linear forwards
+          }
+        }
+
+        .inner {
+          height: 180px;
+          width: 180px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+
+          .level_content {
+              margin: auto;
+              padding: 10px 0 0 40px;
+            .level_text {
+                color: $level_color;
+
+                &:nth-child(1), &:nth-child(3) {
+                  font-size: 1.8rem;
+                  font-family: 'Poppins';
+                }
+
+                &:nth-child(2) {
+                  margin: -30px 0  -30px 0;
+                  font-size: 3rem;
+                  font-family: 'Anton';
+                }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw;
+    grid-gap: 30px;
+    position: relative;
+    margin: 6vh 0 0 18vw;
+    animation: FadeInFromDownside 1.5s ease-in-out forwards;
+
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      height: 220px;
+      text-align: center;
+      border-radius: 30px;
+
+      h5 {
+        font-size: 1.8rem;
+        margin: 3vh 0 -1.5vh 0;
+        font-family: 'Poppins';
+        color: $activities;
+      }
+
+      p {
+        font-size: 1.1rem;
+        font-family: 'Poppins';
+
+        span {
+          color: $activities;
+        }
+      }
+
+      &:nth-child(1) {
+        background-color: $swimming;
+      }
+
+      &:nth-child(2) {
+        background-color: $running;
+      }
+
+      &:nth-child(3) {
+        background-color: $excerise;
+      }
+
+      &:nth-child(4) {
+        background-color: $cycling;
+      }
+
+      &:nth-child(5) {
+        background-color: $golf;
+      }
+
+      &:nth-child(6) {
+        background-color: $meditating;
+      }
+    }
+  }
+}
+
+@keyframes load {
+  100% {
+    stroke-dashoffset: 10;
+  }
+}
+
+@keyframes FadeInFromDownside {
+  0% {
+      transform: translateY(26vw);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

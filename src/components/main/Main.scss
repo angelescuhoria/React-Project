@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+$mainHeaderColor: #f3f4f8;
+$leftSpanColor: #546de5;
+$backupPlan: #70a1ff;
+$gradientColor1: rgba(64,69,106,1);
+$gradientColor2: rgba(65,84,143,1);
+
+
+
+.mainDiv {
+  width: 100%;
+  height: 92vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+
+  .leftContent {
+    width: 70%;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    height: auto;
+
+    .mainH1 {
+      font-family: 'Bakbak One';
+      color: $mainHeaderColor;
+      font-size: 5.5rem;
+      width: 60%;
+      position: relative;
+      left: 15vw;
+      line-height: 95%;
+      margin-bottom: -5vh;
+      font-weight: lighter;
+      margin-top: 15vh;
+      animation: FadeInFromSide 1s ease-in-out;
+
+      .leftSpan {
+        color: $leftSpanColor;
+      }
+    }
+
+    .mainH2 {
+      font-family: 'Bakbak One';
+      color: $mainHeaderColor;
+      font-size: 3.6rem;
+      width: 60%;
+      position: relative;
+      left: 15vw;
+      font-weight: lighter;
+      line-height: 97%;
+      animation: FadeInFromSide 1.75s ease-in-out;
+
+      .leftSpan {
+        color: $leftSpanColor;
+      }
+    }
+
+    .leftP {
+      color: $mainHeaderColor;
+      font-family: 'Josefin Sans';
+      font-weight: bold;
+      font-size: 1.4rem;
+      line-height: 125%;
+      width: 60%;
+      position: relative;
+      left: 15vw;
+      opacity: 0;
+      animation: FadeInFromDownside 1.75s ease-in-out forwards;
+      animation-delay: 1.75s;
+
+      .paragraphSpan {
+        color: $backupPlan;
+      }
+
+      .anchor {
+        text-decoration: none;
+        color: $backupPlan;
+      }
+
+      .mainButton:nth-child(1) {
+        display: inline-block;
+        margin: 0 1vw;
+        padding: 1.5vh 2vw;
+        line-height: 1;
+        border: 2px solid $leftSpanColor;
+        cursor: pointer;
+        background: transparent;
+        border-radius: 30px;
+        font-family: 'Josefin Sans';
+        color: $backupPlan;
+        font-weight: bold;
+        font-size: 1.3rem;
+      }
+
+      .mainButton:nth-child(2) {
+        display: inline-block;
+        margin: 0 1vw;
+        border: 0;
+        padding: 1.5vh 2vw;
+        border-radius: 30px;
+        line-height: 1;
+        background: linear-gradient(60deg, $leftSpanColor 50%, $backupPlan 100%);
+        cursor: pointer;
+        font-family: 'Josefin Sans';
+        font-weight: bold;
+        font-size: 1.3rem;
+        color: $mainHeaderColor;
+      }
+
+      .link {
+        text-decoration: none;
+        color: $mainHeaderColor;
+      }
+    }
+  }
+
+  .rightContent {
+    width: 30%;
+    box-sizing: border-box;
+    position: relative;
+    margin: auto 6vw auto 0;
+
+    .phone {
+      position: relative;
+      margin-left: 3vw;
+      animation: MoveUpAndDown 3.3s linear infinite;
+      z-index: 2;
+    }
+
+    .light {
+      position: relative;
+      margin-top: -20vh;
+      margin-left: 5vw;
+      width: 19vw;
+      height: 13.5vw;
+      background: linear-gradient(90deg, $gradientColor1 0%, $gradientColor2 100%);
+      transform: rotateX(57deg) rotateY(10deg) rotateZ(235deg);
+      filter: blur(1em);
+      z-index: 1;
+      animation: InNOut 3.3s linear infinite;
+    }
+  }
+}
+
+@keyframes MoveUpAndDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 3vh;
+  }
+}
+
+@keyframes InNOut {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes FadeInFromSide {
+  0% {
+      opacity: 0;
+      -webkit-transform: translateX(-10vw);
+  }
+  100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+  }
+}
+
+@keyframes FadeInFromDownside {
+  0% {
+      transform: translateY(10vw);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

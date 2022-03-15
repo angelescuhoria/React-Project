@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+$backgroundform-color: rgba(243, 244, 248, 0.1);
+$fontColor: #546de5;
+$h1Color: #0984e3;
+$anotherbackgroundColor: #f3f4f8;
+
+.registerform {
+  position: relative;
+  margin: 10vh auto 0 auto;
+  width: 30%;
+  height: 100%;
+  background-color: $backgroundform-color;
+  font-family: 'Montserrat';
+  border-radius: 10px;
+
+  h1 {
+    text-align: center;
+    padding-top: 5vh;
+    color: $h1Color;
+  }
+
+  form {
+    padding: 0 3vw;
+    box-sizing: border-box;
+    position: relative;
+
+    .text_field {
+      position: relative;
+      margin: 6vh 3vw;
+      color: $fontColor;
+      font-size: 1.1rem;
+
+      label {
+        position: absolute;
+        pointer-events: none;
+        left: 0.4vw;
+        top: 0.5vw;
+        transition: .5s;
+      }
+
+      input {
+        width: 100%;
+        padding: 0 0.26vw;
+        height: 4.26vh;
+        font-size: 16px;
+        border: 2px solid $h1Color;
+        outline: none;
+        background-color: $anotherbackgroundColor;
+
+        &:focus + label, &:valid + label {
+          top: -3vh;
+          color: $h1Color;
+        }
+      }
+    }
+
+    button {
+      display: block;
+      margin: 4vh auto 0 auto;
+      border: 0;
+      padding: 1.2vh 2vw;
+      border-radius: 30px;
+      line-height: 1;
+      cursor: pointer;
+      font-family: 'Montserrat';
+      font-size: 1.2rem;
+      color: $h1Color;
+      background-color: $anotherbackgroundColor;
+    }
+
+    .login_link {
+      margin-top: 3vh;
+      text-align: center;
+      padding-top: 1vh;
+      padding-bottom: 3vh;
+
+      .login_text {
+        color: $anotherbackgroundColor;
+        font-size: 1.1rem;
+
+        .link {
+          text-decoration: none;
+          color: $h1Color;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

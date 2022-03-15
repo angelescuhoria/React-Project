@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/React-project/static/css/main.5df68aa6.chunk.css",
+    "main.js": "/React-project/static/js/main.ac56cc47.chunk.js",
+    "main.js.map": "/React-project/static/js/main.ac56cc47.chunk.js.map",
+    "runtime-main.js": "/React-project/static/js/runtime-main.88dc1a32.js",
+    "runtime-main.js.map": "/React-project/static/js/runtime-main.88dc1a32.js.map",
+    "static/js/2.fb6093fe.chunk.js": "/React-project/static/js/2.fb6093fe.chunk.js",
+    "static/js/2.fb6093fe.chunk.js.map": "/React-project/static/js/2.fb6093fe.chunk.js.map",
+    "static/js/3.082363e1.chunk.js": "/React-project/static/js/3.082363e1.chunk.js",
+    "static/js/3.082363e1.chunk.js.map": "/React-project/static/js/3.082363e1.chunk.js.map",
+    "index.html": "/React-project/index.html",
+    "static/css/main.5df68aa6.chunk.css.map": "/React-project/static/css/main.5df68aa6.chunk.css.map",
+    "static/js/2.fb6093fe.chunk.js.LICENSE.txt": "/React-project/static/js/2.fb6093fe.chunk.js.LICENSE.txt",
+    "static/media/Home.min.css": "/React-project/static/media/Background.c65dda7d.png",
+    "static/media/Phone.5c8e9f91.png": "/React-project/static/media/Phone.5c8e9f91.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.88dc1a32.js",
+    "static/js/2.fb6093fe.chunk.js",
+    "static/css/main.5df68aa6.chunk.css",
+    "static/js/main.ac56cc47.chunk.js"
+  ]
+}
