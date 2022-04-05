@@ -1,10 +1,10 @@
 export const config = {
   firebase: {
-    apiKey: "AIzaSyBqGmxSyf3H7vF1gM-p8PDQR07Ax_Qp6og",
-    authDomain: "react-project-auth-dev.firebaseapp.com",
-    projectId: "react-project-auth-dev",
-    storageBucket: "react-project-auth-dev.appspot.com",
-    messagingSenderId: "552276043608",
-    appId: "1:552276043608:web:31c270e3722bdb084c672d"
+    apiKey: "AIzaSyCURwltQ3_xJMsEdnltN0NoOYhobExlylY",
+	authDomain: "react-firebase-5a73b.firebaseapp.com",
+	projectId: "react-firebase-5a73b",
+	storageBucket: "react-firebase-5a73b.appspot.com",
+	messagingSenderId: "936180149920",
+	appId: "1:936180149920:web:0337e9d1c33d37ac4e63c5"
   }
 }
